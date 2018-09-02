@@ -147,4 +147,4 @@ Reference result:
 
 Since the new claim exists in the form of a valid IOTA transaction, we can look up the claim transaction via IOTA Explorer.
 Here is an example of a pre-issued identity stored in the form of claim transaction. Once the transaction hash is obtained from applications, IOTA Explorer can browse its details.
-https://thetangle.org/transaction/OTSQDZSFDDERAADSBBTJKZGZXDT9HPMTDYPRSYJGQGCHCZRPJUEVUEFW9EUZKS9QTAGVXLCCXBRBZ9999
+![Thetangle.org](https://thetangle.org/transaction/OTSQDZSFDDERAADSBBTJKZGZXDT9HPMTDYPRSYJGQGCHCZRPJUEVUEFW9EUZKS9QTAGVXLCCXBRBZ9999)

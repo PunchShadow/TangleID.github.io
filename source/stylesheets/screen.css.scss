@@ -464,7 +464,7 @@ html, body {
   img {
     max-width: 100%;
   }
-
+  /*
   code {
     background-color: rgba(0,0,0,0.05);
     padding: 3px;
@@ -472,12 +472,7 @@ html, body {
     @extend %break-words;
     @extend %code-font;
   }
-
-  pre>code {
-    background-color: transparent;
-    padding: 0;
-  }
-
+  */
   aside {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -525,8 +520,8 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
-// This is all the stuff that appears in the right half of the page
-/*
+// This is all the stuff that appears in the code section of the page
+
 .content {
   pre, blockquote {
     background-color: $code-bg;
@@ -535,12 +530,13 @@ html, body {
     margin: 0;
     width: 0;
 
-    float:right;
-    clear:right;
+    // Chane side of float and clear.
+    float:none;
+    clear:none;
 
     box-sizing: border-box;
 
-    @extend %right-col;
+    //@extend %right-col;
 
     &>p { margin: 0; }
 
@@ -553,10 +549,15 @@ html, body {
 
   pre {
     @extend %code-font;
+    width: 70%;
     padding-top: 2em;
-    padding-bottom: 2em;
-    padding: 2em $main-padding;
+    padding-bottom: 10px;
+    padding: 2em $code-annotation-padding;
+    margin-left: $pre-margin;
+    border-radius: 25px;
+    border: 2px solid white;
   }
+
 
   blockquote {
     &>p {
@@ -566,7 +567,7 @@ html, body {
     }
   }
 }
-*/
+
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////
@@ -620,6 +621,9 @@ html, body {
 
   %right-col + %left-col {
     margin-top: $main-padding;
+  }
+  .pre {
+    width: auto;
   }
 }
 

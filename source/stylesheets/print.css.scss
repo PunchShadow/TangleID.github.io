@@ -44,7 +44,8 @@ body {
     @extend %break-words;
     border: 1px solid $print-color;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 4em;
+    padding-left: $tablet-width;
   }
 
   pre {
@@ -54,11 +55,10 @@ body {
   }
 
   pre {
-    padding: 1.3em;
+    //padding-right: 100px;
   }
-
   code {
-    padding: 0.2em;
+    //padding: 0.2em;
   }
 
   table {
