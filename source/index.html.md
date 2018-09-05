@@ -23,7 +23,7 @@ search: true
 
 The emerge of blockchain technology triggers our imaginations and diverse applications of decentralized distributed ledgers. Ethereum, for example, takes good use of machine-to-machine(M2M) technology and distributed records to create trusts, which is well-known as “”Smart Contract.” However, the scopes of blockchain should be further broaden, extended and reach out to more fields. Current identity authentication, resulting from the centralized managements in whether real or virtual worlds, is also faced with great challenges and expects for the new transformation.
 TangleID can be the very solution to trust building by providing a secure, easy-to-use system for self-sovereign identity based on cryptographic mechanism called IOTA/Tangle. Normally, we get access to our asset management by the approval of centralized administration, which implies that verification process for the certificates can be constrained or time-consuming, and tend to sacrifice efficiency for security. However, the problems are amplified in cyberspace. More reliable trust mechanism is needed, and so is handy operation. TangleID allows each entity, such as citizen digital certificate, to have its unique identifier to manage digital assets if private key verified. In this case, the ownership of digital assets can be realized, and more excitingly, in decentralized method.
-By interacting with Tangle network, an identity storing its hash of an attributed data blob(e.g. Google Cloud, Azure, AWS, Dropbox, etc.) is able to be linked to offline data storage and update its files automatically, such as adding friends, modifying profiles and posting ephemeral (short time) photos. Particularly on blockchain, the features of immutability and transparency ensures the trust take place. In the acts, a set of “footprints” is inevitably left and reinforces the existence of the entity.  
+By interacting with Tangle network, an identity storing its hash of an attributed data blob(e.g. Google Cloud, Azure, AWS, Dropbox, etc.) is able to be linked to offline data storage and update its files automatically, such as adding friends, modifying profiles and posting ephemeral (short time) photos. Particularly on blockchain, the features of immutability and transparency ensures the trust take place. In the acts, a set of “footprints” is inevitably left and reinforces the existence of the entity.
 Moreover, the machine-to-machine (M2M) communication can dramatically decrease the transaction cost, whether during interview or for insurance. In this paper, we propose a more efficient solution to identity authentication using machine-to-machine verification based on IOTA/Tangle and further provide a path to self-sovereign identity in the digital world. In addition, since TangleID is involved in the digital asset management, we also develop a mobile application (APP) to enable users to keep their private keys as well as certain addresses as identifiers.
 
 ## Identity
@@ -141,9 +141,12 @@ curl $TANGLEID_HOST \
  -H 'Content-Type: application/json' \
  -d '{"command":"get_all_claims","uuid": "'$UUID'"}'
 ```
+111111
 
 Reference result:
 `["OTSQDZSFDDERAADSBBTJKZGZXDT9HPMTDYPRSYJGQGCHCZRPJUEVUEFW9EUZKS9QTAGVXLCCXBRBZ9999"]`
+
+<redoc spec-url="http://petstore.swagger.io/v2/swagger.json"></redoc>
 
 Since the new claim exists in the form of a valid IOTA transaction, we can look up the claim transaction via IOTA Explorer.
 Here is an example of a pre-issued identity stored in the form of claim transaction. Once the transaction hash is obtained from applications, IOTA Explorer can browse its details.
